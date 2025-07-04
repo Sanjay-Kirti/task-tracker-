@@ -1,0 +1,247 @@
+/* App.css for Personal Task Tracker */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  min-height: 100vh;
+  background: #f7f7fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #222;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1.1rem;
+}
+
+.logout-btn {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.logout-btn:hover {
+  background: #c0392b;
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .logout-btn {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}
+
+.dashboard {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem 1rem;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.task-form input,
+.task-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+.task-form button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.task-form button[type="button"] {
+  background: #aaa;
+}
+.task-form button:hover {
+  background: #217dbb;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+.task-filter {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.task-filter button {
+  background: #eee;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.task-filter button.active,
+.task-filter button:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.no-tasks {
+  text-align: center;
+  color: #888;
+  margin: 2rem 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #f9f9fb;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1rem;
+  transition: background 0.2s;
+}
+.task-item.completed {
+  background: #e0ffe0;
+  text-decoration: line-through;
+  color: #888;
+}
+.task-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.task-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.task-desc {
+  font-size: 0.98rem;
+  color: #555;
+}
+.task-date {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.task-actions button {
+  background: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+.task-actions button:last-child {
+  background: #e74c3c;
+}
+.task-actions button:hover {
+  opacity: 0.85;
+}
+
+.login-container {
+  max-width: 350px;
+  margin: 4rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+.login-container input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.login-container button {
+  width: 100%;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.login-container button:hover {
+  background: #217dbb;
+}
+
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 1rem 0.2rem;
+  }
+  .task-form,
+  .task-list {
+    gap: 0.5rem;
+  }
+  .task-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .task-actions {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+} 
