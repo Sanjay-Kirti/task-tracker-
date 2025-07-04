@@ -40,7 +40,7 @@ A simple, responsive personal task management application built with React. Easi
 - [No external state management libraries]
 
 ## 🔗 Live Demo
-[Add your deployed app link here]
+https://task-tracker-fawn-phi.vercel.app/
 
 ## 🖼 Screenshots
 | Login Page | Dashboard |
