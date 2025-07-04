@@ -37,10 +37,9 @@ A simple, responsive personal task management application built with React. Easi
 ## 🧰 Technologies Used
 - React.js
 - CSS (custom, responsive)
-- [No external state management libraries]
 
 ## 🔗 Live Demo
-https://task-tracker-fawn-phi.vercel.app/
+task-tracker-fawn-phi.vercel.app
 
 ## 🖼 Screenshots
 | Login Page | Dashboard |
